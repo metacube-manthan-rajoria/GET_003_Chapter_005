@@ -3,13 +3,25 @@ body {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	height: 100%;
 }
 
 body {
-	font-family: "Roboto", sans-serif;
-	font-weight: 500;
+	font-family: "Nunito", sans-serif;
 	font-style: normal;
 
 	--website-background-light: #ffffff;
-	--text-color-1: white;
+	--text-color-1: black;
+	--website-background-dark: #313a46;
+	--text-color-2: white;
 }
+
+nav {
+	background-color: #313a46;
+	height: 100%;
+}
+
+#content {
+	background-color: blue;
+}
+
