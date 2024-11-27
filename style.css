@@ -29,3 +29,7 @@ nav {
 	display: none;
 }
 
+.accordion-button:not(.collapsed) {
+	color: inherit;
+}
+
