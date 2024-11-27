@@ -13,15 +13,19 @@ body {
 	--website-background-light: #ffffff;
 	--text-color-1: black;
 	--website-background-dark: #313a46;
+	--website-nav-dark: #38414c;
 	--text-color-2: white;
 }
 
 nav {
-	background-color: #313a46;
-	height: 100%;
+	background-color: var(--website-nav-dark);
 }
 
 #content {
-	background-color: blue;
+	background-color: var(--website-background-light);
+}
+
+::-webkit-scrollbar {
+	display: none;
 }
 

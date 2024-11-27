@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./res/favicon.ico">
     <title>Gamedemon's Dashboard</title>
 
     <link
@@ -22,6 +22,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <link rel="stylesheet" href="./res/assets/app.min.css" />
     <link rel="stylesheet" href="./res/assets/datepicker.min.css" />
@@ -30,24 +31,94 @@
 </head>
 <body class="row">
     <nav class="col-2">
-        <section class="ali">
-            <img src="./res/images/logo.png" alt="Hyper">
+        <section class="text-center">
+            <img src="./res/images/logo.png" class="py-3" alt="Hyper" width="45%">
         </section>
 
-        <section id="nav_navigation">
-
+        <section id="nav_navigation" class="mx-2">
+            <span>Navigation</span>
+            <div class="py-3">
+                <i class="fa fa-home text-white px-1"></i>
+                <span class="text-white">Dashboard</span>
+            </div>
         </section>
 
-        <section id="nav_apps">
+        <section id="nav_apps" class="mx-2">
+            <span>Apps</span>
+            <div class="pt-3">
+                <i class="col-2 fa fa-calendar px-2"></i>
+                <span class="col">Calendar</span>
+            </div>
+            <div class="pt-3">
+                <i class="fa fa-wechat px-2"></i>
+                <span>Chat</span>
+            </div>
+            <div class="pt-3">
+                <i class="fa fa-tachometer px-2"></i>
+                <span>CRM</span>
+            </div>
 
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item bg-transparent">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button bg-transparent collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Accordion Item #1
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                  </div>
+                </div>
+              </div>
+
+            <div class="pt-3">
+                <i class="fa fa-shopping-cart px-2"></i>
+                <span>ECommerce</span>
+            </div>
+            <div class="pt-3">
+                <i class="material-icons px-2 fs-5 m-0">&#xe0be;</i>
+                <span>Email</span>
+            </div>
+            <div class="pt-3">
+                <i class="fa fa-archive px-2"></i>
+                <span>Projects</span>
+            </div>
+            <div class="pt-3">
+                <i class="fa fa-wifi px-2"></i>
+                <span>Social Feed</span>
+            </div>
+            <div class="pt-3">
+                <i class="fa fa-clipboard px-2"></i>
+                <span>Tasks</span>
+            </div>
+            <div class="py-3">
+                <i class="fa fa-file px-2"></i>
+                <span>File Manager</span>
+            </div>
         </section>
 
-        <section id="nav_custom">
-
+        <section id="nav_custom" class="mx-2">
+            <span>Custom</span>
+            <div class="pt-3">
+                <i class="fa fa-file-o px-2"></i>
+                <span>Pages</span>
+            </div>
+            <div class="pt-3">
+                <i class="fa fa-globe px-2"></i>
+                <span>Landing</span>
+            </div>
+            <div class="py-3">
+                <i class="fa fa-server px-2"></i>
+                <span>Layouts</span>
+            </div>
         </section>
 
-        <section id="nav_components">
-
+        <section id="nav_components" class="mx-2">
+            <span>Components</span>
+            <div class="py-3">
+                <i class="fa fa-home px-1"></i>
+                <span>Dashboard</span>
+            </div>
         </section>
     </nav>
     <div id="content" class="col">
