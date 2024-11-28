@@ -107,3 +107,17 @@ header{
 main {
 	background-color: var(--website-background-light);
 }
+
+/* Footer */
+footer {
+	display: flex;
+	justify-content: space-between;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	color: rgba(0, 0, 0, 0.4);
+}
+
+footer > ul {
+	list-style: none;
+	display: flex;
+	gap: 1rem;
+}
