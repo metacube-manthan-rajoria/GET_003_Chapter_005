@@ -28,9 +28,10 @@
     <link rel="stylesheet" href="./res/assets/datepicker.min.css" />
     <link rel="stylesheet" href="./res/assets/icons.min.css" />
     <link rel="stylesheet" href="style.css" />
+    <script src="./res/assets/script.js" defer></script>
 </head>
 <body class="row">
-    <nav class="col-2">
+    <nav id="side_nav" class="col-2">
         <section class="text-center">
             <img src="./res/images/logo.png" class="py-3" alt="Hyper" width="45%">
         </section>
@@ -73,8 +74,8 @@
         <section id="nav_apps" class="mx-2">
             <span>Apps</span>
             <div class="pt-3">
-                <i class="col-2 fa fa-calendar px-2"></i>
-                <span class="col">Calendar</span>
+                <i class="fa fa-calendar px-2"></i>
+                <span>Calendar</span>
             </div>
             <div class="pt-3">
                 <i class="fa fa-wechat px-2"></i>
@@ -446,7 +447,21 @@
         </section>
     </nav>
     <div id="content" class="col">
-        <header>
+        <header class="py-1">
+            <nav class="py-2 d-flex ">
+                <span>
+                    <i class="fa fa-bars fs-3 fw-light px-4"></i>
+                </span>
+                <div>
+                    <div class="position-relative">
+                        <span id="search_icon">
+                            <i class="fa fa-search position-relative" style="left: 30px;"></i>
+                        </span>
+                        <input type="search" id="header_search" class="dropdown-toggle" placeholder="Search...">
+                        <button id="search_button" class="input-group-text btn btn-primary" type="submit">Search</button>
+                    </div>
+                </div>
+            </nav>
         </header>
 
         <main>
