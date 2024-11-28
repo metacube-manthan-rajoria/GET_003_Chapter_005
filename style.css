@@ -50,7 +50,7 @@ header{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	align-items: center;
-	width: 100%;
+	width: 85%;
 }
 
 #top_nav > ul {
@@ -88,7 +88,9 @@ header{
 
 #profile_wrapper {
 	display: grid;
+	align-content: center;
 	grid-template-columns: 1fr 4fr;
+	border-left: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 #profile_image {
