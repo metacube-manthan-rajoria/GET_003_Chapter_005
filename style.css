@@ -122,6 +122,10 @@ main {
 	margin-right: 1rem;
 }
 
+#projects_content > div {
+	justify-items: center;
+}
+
 .projects_content_border {
 	border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
