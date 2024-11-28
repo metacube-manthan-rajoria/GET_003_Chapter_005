@@ -130,6 +130,24 @@ main {
 	border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+#second_section {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: 2rem;
+	padding-right: 1.5rem;
+	margin-top: 2rem;
+}
+
+#second_section > div {
+	height: 300px;
+	padding: 2rem;
+}
+
+.white_back {
+	background-color: var(--nav-background-light);
+	box-shadow: 0px 0px 35px 0px rgba(154, 161, 171, 0.15);
+}
+
 /* Footer */
 footer {
 	display: flex;
