@@ -31,5 +31,6 @@ nav {
 
 .accordion-button:not(.collapsed) {
 	color: inherit;
+	box-shadow: none;
 }
 
