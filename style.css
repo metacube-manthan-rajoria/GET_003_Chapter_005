@@ -154,10 +154,32 @@ footer {
 	justify-content: space-between;
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
 	color: rgba(0, 0, 0, 0.4);
+	margin-top: 2rem;
 }
 
 footer > ul {
 	list-style: none;
 	display: flex;
 	gap: 1rem;
+}
+
+@media screen and (max-width: 780px) {
+	#projects_content {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	#second_section {
+		grid-template-columns: 1fr;
+	}
+
+	#header_icon_list {
+		display: none !important;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	#side_nav {
+		position: absolute;
+		
+	}
 }
