@@ -7,6 +7,7 @@ body {
 }
 
 body {
+	display: grid;
 	font-family: "Nunito", sans-serif;
 	font-style: normal;
 
@@ -18,13 +19,36 @@ body {
 }
 
 ::-webkit-scrollbar {
-	display: none;
+	width: 0.4rem;
 }
+::-webkit-scrollbar-thumb {
+	background-color: grey;
+	border-radius: 200px;
+}
+::-webkit-scrollbar-track {
+	background: transparent; 
+  }
 
 /* Side Nav */
 #side_nav {
 	background-color: var(--website-nav-dark);
 	min-width: 17rem;
+	height: 100vh;
+	overflow: auto;
+}
+
+#side_nav_logo_wrapper {
+	position: relative;
+}
+
+#side_nav_logo_wrapper > span {
+	position: absolute;
+	right: 15px;
+	top: 25px;
+	color: white;
+	font-size: 1rem;
+	font-weight: 600;
+	display: none;
 }
 
 .accordion-button:not(.collapsed) {
@@ -33,13 +57,25 @@ body {
 }
 
 /* Content */
+#app_wrapper {
+	display: grid;
+	grid-template-columns: 2fr 10fr;
+}
+
 #content {
+	display: grid;
 	background-color: var(--website-background-light);
 	padding: 0;
+	max-height: 100vh;
+	overflow: scroll;
+}
+#content::-webkit-scrollbar {
+	width: 0.4rem;
 }
 
 /* Content > Header */
 header{
+	max-height: 7rem;
 	background-color: var(--nav-background-light);
 	box-shadow: 0px 0px 35px 0px rgba(154, 161, 171, 0.15);
 	padding: 0;
@@ -152,9 +188,11 @@ main {
 footer {
 	display: flex;
 	justify-content: space-between;
+	align-self: end;
+	max-height: 7rem;
+	margin-top: 2rem;
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
 	color: rgba(0, 0, 0, 0.4);
-	margin-top: 2rem;
 }
 
 footer > ul {
@@ -164,13 +202,21 @@ footer > ul {
 }
 
 @media screen and (max-width: 780px) {
-	#projects_content {
-		grid-template-columns: repeat(2, 1fr);
-	}
-
-	#second_section {
+	#app_wrapper {
 		grid-template-columns: 1fr;
 	}
+	#side_nav {
+		position: absolute;
+	}
+
+	#side_nav_logo_wrapper > span {
+		display: inline;
+	}
+
+	#app_wrapper {
+		grid-template-columns: none;
+	}
+	
 
 	#header_icon_list {
 		display: none !important;
@@ -178,8 +224,27 @@ footer > ul {
 }
 
 @media screen and (max-width: 1200px) {
-	#side_nav {
-		position: absolute;
-		
+	#projects_content {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	#search_wrapper {
+		display: none !important;
+	}
+
+	#header_icon_list {
+		display: none !important;
+	}
+
+	#profile_wrapper {
+		grid-template-columns: none;
+	}
+
+	#profile_info {
+		display: none !important;
+	}
+
+	#second_section {
+		grid-template-columns: 1fr;
 	}
 }
